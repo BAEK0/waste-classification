@@ -33,7 +33,7 @@ public class chaxun extends JFrame {
 				}else{
 					dispose();//System.exit(0);
 				}
-			
+					// 
 				}
 		};
 	
