@@ -19,7 +19,8 @@ public class wrong extends JFrame{
 			}
 		}
 	};
-	public wrong() {
+	public wrong(String type) {
+		b3 = new JLabel(type,JLabel.CENTER);
 		setLayout(null);
 		b3.setBounds(140,10,100,50);
 		b1.setBounds(100,70,80,40);
@@ -30,7 +31,7 @@ public class wrong extends JFrame{
 		add(b1);
 		add(b2);
 		}
-	private JLabel b3 = new JLabel("result",JLabel.CENTER);
+	private JLabel b3 ;
 	}
 
 

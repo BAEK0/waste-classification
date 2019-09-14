@@ -19,8 +19,8 @@ public class tianjia extends JFrame{
 			String name=((JButton)e.getSource()).getText();
 			if (name.equals("Ìí¼Ó")){
 				DatabaseManager s = new DatabaseManager();
-				String n = s.addGarbageType(b5.getText());
-				String l = s.addGarbageType(b6.getText());
+				s.addGarbageType(b5.getText(), b6.getText());
+				
 			}else {
 				dispose();
 			}
