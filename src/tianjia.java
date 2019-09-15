@@ -4,6 +4,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 
@@ -20,7 +21,7 @@ public class tianjia extends JFrame{
 			if (name.equals("添加")){
 				DatabaseManager s = new DatabaseManager();
 				s.addGarbageType(b5.getText(), b6.getText());
-				
+				JOptionPane.showMessageDialog(null,"添加成功");
 			}else {
 				dispose();
 			}
@@ -33,7 +34,9 @@ public class tianjia extends JFrame{
 		add(b5);
 		add(b6);
 		add(b1);
+		b1.addActionListener(a);
 		add(b2);
+		b2.addActionListener(a);
 		}
 	private JLabel b3 = new JLabel("垃圾名称：");
 	private JLabel b4 = new JLabel("垃圾类别：");
