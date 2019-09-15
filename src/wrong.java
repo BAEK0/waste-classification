@@ -6,14 +6,14 @@ import javax.swing.JLabel;
 
 public class wrong extends JFrame{
 	private JButton
-	b1=new JButton("修改"),
+	b1=new JButton("去修改"),
 	b2=new JButton("取消");
 	
 	private ActionListener a=new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			String name=((JButton)e.getSource()).getText();
-			if (name.equals("修改")){
-		///////////////////////////////////////////////////////////
+			if (name.equals("去修改")){
+				nodata.run(new xiugai(),200,100);
 			}else {
 				dispose();
 			}
