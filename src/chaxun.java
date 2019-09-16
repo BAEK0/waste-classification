@@ -27,7 +27,7 @@ public class chaxun extends JFrame {
 				}else{
 					//œ‘ æ¿¨ª¯¿‡–Õ
 					//JOptionPane.showMessageDialog(jtf, result);
-					nodata.run(new wrong(result),200,100);
+					nodata.run(new wrong(jtf.getText(),result),200,100);
 					}
 				}else{
 					dispose();//System.exit(0);

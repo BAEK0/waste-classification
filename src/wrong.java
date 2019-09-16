@@ -13,13 +13,13 @@ public class wrong extends JFrame{
 		public void actionPerformed(ActionEvent e) {
 			String name=((JButton)e.getSource()).getText();
 			if (name.equals("È¥ÐÞ¸Ä")){
-				nodata.run(new xiugai(jtf.getText),200,100);
+				nodata.run(new xiugai(mingcheng),200,100);
 			}else {
 				dispose();
 			}
 		}
 	};
-	public wrong(String type) {
+	public wrong(String mingcheng,String type) {
 		b3 = new JLabel(type,JLabel.CENTER);
 		setLayout(null);
 		b3.setBounds(140,10,100,50);
@@ -32,7 +32,7 @@ public class wrong extends JFrame{
 		add(b2);
 		}
 	private JLabel b3 ;
-	}
+}
 
 
 	
