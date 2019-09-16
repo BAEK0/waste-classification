@@ -17,6 +17,7 @@ public class xiugai extends JFrame{
 			if (name.equals("完成")){
 				DatabaseManager s = new DatabaseManager();
 				
+				
 				JOptionPane.showMessageDialog(null,"修改成功");
 			}else {
 				dispose();
@@ -28,7 +29,7 @@ public class xiugai extends JFrame{
 		b4=new JTextField();
 		b5 = new JLabel(text);
 		setLayout(null);
-		b5.setBounds(100,8,100,50);
+		b5.setBounds(150,8,100,50);
 		b4.setBounds(200,15,120,30);
 		b3.setBounds(170,8,100,50);
 		b1.setBounds(100,70,80,40);

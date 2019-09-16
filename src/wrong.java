@@ -8,7 +8,7 @@ public class wrong extends JFrame{
 	private JButton
 	b1=new JButton("去修改"),
 	b2=new JButton("取消");
-	
+	String mingcheng;
 	private ActionListener a=new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			String name=((JButton)e.getSource()).getText();
@@ -32,7 +32,7 @@ public class wrong extends JFrame{
 		add(b2);
 		}
 	private JLabel b3 ;
-}
+	}
 
 
 	
