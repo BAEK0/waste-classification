@@ -13,7 +13,7 @@ public class wrong extends JFrame{
 		public void actionPerformed(ActionEvent e) {
 			String name=((JButton)e.getSource()).getText();
 			if (name.equals("È¥ÐÞ¸Ä")){
-				nodata.run(new xiugai(),200,100);
+				nodata.run(new xiugai(jtf.getText),200,100);
 			}else {
 				dispose();
 			}

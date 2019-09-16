@@ -123,10 +123,11 @@ return "数据库查询异常";
 	}
 return "数据库异常";
 	}
+
 	
 	
 	
-	public void updata() {
+	public void updataGarbageType(String name,String sort) {
 		Connection conn=null;
 		Statement st=null;
 		ResultSet rs=null;
@@ -141,7 +142,7 @@ return "数据库异常";
 //3.获取传输器
 		 st=conn.createStatement();
 //4.执行SQL
-		 String sql="update laji set sort='湿垃圾'  where name='瓜子皮'";
+		 String sql="update laji set sort='"+sort+"'  where name='"+name+"'";
 		 st.executeUpdate(sql);
 //5.遍历结果集
 		 System.out.println(st);
